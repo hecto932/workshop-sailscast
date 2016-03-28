@@ -29,11 +29,34 @@
     -->
 
     <!--STYLES-->
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
     <link rel="stylesheet" href="/styles/importer.css">
     <!--STYLES END-->
   </head>
 
   <body>
+
+  <nav class="navbar navbar-inverse"> 
+        <div class="container-fluid"> 
+            <div class="navbar-header"> 
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9" aria-expanded="false">
+                    <span class="sr-only">My App</span> 
+                    <span class="icon-bar"></span> 
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
+                </button> 
+                <a class="navbar-brand" href="#">My App</a> 
+            </div>  
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9"> 
+                <ul class="nav navbar-nav"> 
+                    <li class="active"><a href="#">Home</a></li> 
+                    <li><a href="#">Users</a></li> 
+                    <li><a href="#">Link</a></li> 
+                </ul> 
+            </div>
+        </div>
+    </nav>
+
     <%- body %>
 
 
@@ -89,6 +112,8 @@
 
     <!--SCRIPTS-->
     <script src="/js/dependencies/sails.io.js"></script>
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
     <!--SCRIPTS END-->
   </body>
 </html>
