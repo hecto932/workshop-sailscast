@@ -1,4 +1,6 @@
 {
 	"Welcome": "Welcome",
-	"A brand new app.": "A brand new app."
+	"A brand new app.": "A brand new app.",
+	"authentication.email.required": "Email is required",
+    "authentication.email.email": "Provide valid email address"
 }

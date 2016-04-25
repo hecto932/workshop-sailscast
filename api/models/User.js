@@ -23,15 +23,17 @@ module.exports = {
   	},
   	encryptedPassword: {
   		type: 'string'
-  	}/*,
-    toJSON: function(){
-      var obj = this.toObject();
-      delete obj.password;
-      delete obj.confirmation;
-      delete obj.encryptedPassword;
-      delete obj._csrf;
-      return obj;
-    }*/
-  }
+  	}
+  },
+  validationMessages: { //hand for i18n & l10n
+        email: {
+            required: 'Email is required',
+            email: 'Provide valid email address',
+            unique: 'Email address is already taken'
+        },
+        name: {
+            required: 'Name is required'
+        }
+    }
 };
 

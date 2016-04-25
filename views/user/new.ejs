@@ -6,6 +6,7 @@
 			<div class="form-group">
 			    <label>Name</label>
 			    <input type="text" name="name" class="form-control" placeholder="Your name">
+			    <%= flash.err.name %>
 			</div>
 			<div class="form-group">
 			    <label>Title</label>
@@ -14,6 +15,9 @@
 			<div class="form-group">
 			    <label>Email</label>
 			    <input type="text" name="email" class="form-control" placeholder="Your email">
+			    <% Object.keys(flash.err.email).forEach(function(error){ %>
+					<%= flash.err.email[error] %><br/>
+				<% }) %>
 			</div>
 			<div class="form-group">
 			    <label>Password</label>
