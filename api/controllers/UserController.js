@@ -24,10 +24,11 @@ module.exports = {
 			            output[field].push(messages[field] && messages[field][error.rule] || error.rule);
 			        })
 			    });
-			    console.log(output);
+			    
 			   	req.session.flash = {
 			   		err: output
-			   	} 
+			   	}
+			   	//res.json(req.session);
 			    return res.redirect("user/new");
 			}
 			res.json(user);
